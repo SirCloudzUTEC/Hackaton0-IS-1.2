@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estructuras de Datos - CS2031 Team</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/page.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/team.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -19,7 +24,6 @@
               <span class="nav__logo">CS2031</span>
             </div>
 
-            <!-- Hidden checkbox for mobile menu toggle -->
             <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
             <label for="nav-toggle" class="nav__toggle">
               <span class="nav__toggle-line nav__toggle-line--top"></span>
@@ -29,15 +33,12 @@
 
             <ul class="nav__list">
               <li class="nav__item">
-                <!-- BUG #1: este enlace apunta a la seccion equivocada, deberia ser #hero -->
                 <a href="#hero" class="nav__link">Inicio</a>
               </li>
               <li class="nav__item">
-                <!-- BUG #2: este enlace apunta a la seccion equivocada, deberia ser #about -->
                 <a href="#about" class="nav__link">Acerca de</a>
               </li>
               <li class="nav__item">
-                <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
                 <a href="#team" class="nav__link">Equipo</a>
               </li>
             </ul>
@@ -54,14 +55,8 @@
                 Explorando el mundo de los algoritmos y la eficiencia computacional
               </p>
               <div class="hero__actions">
-                <a href="#about" class="hero__button hero__button--primary"
-                  >Aprender más</a
-                >
-                <a
-                  href="#team"
-                  class="hero__button hero__button--secondary"
-                  >Conocer al equipo</a
-                >
+                <a href="#about" class="hero__button hero__button--primary">Aprender más</a>
+                <a href="#team" class="hero__button hero__button--secondary">Conocer al equipo</a>
               </div>
             </div>
             <div class="hero__visual">
@@ -124,84 +119,80 @@
         <section id="team" class="team">
           <div class="team__container">
             <div class="team__header">
-              <h2 class="IS 1.2">Nuestro Equipo</h2>
-              <p class="NO nos jalen :c">
-                Las personas detrás de este proyecto
+              <h2 class="team__title">Nuestro Equipo (IS 1.2)</h2>
+              <p class="team__description">
+                Las personas detrás de este proyecto (¡NO nos jalen :c!)
               </p>
             </div>
 
             <div class="team__grid">
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://github.com/SirCloudzUTEC.png"
+                    alt="Diego Fabricio Godoy Torres"
+                    class="team-card__photo"
+                  />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Diego Fabricio Godoy Torres</h3>
+                  <p class="team-card__role">Homelabbing</p>
+                  <div class="team-card__social">
+                    <a href="https://github.com/SirCloudzUTEC" class="team-card__social-link team-card__social-link--github">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/diego-godoy-torres/" class="team-card__social-link team-card__social-link--linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-  <!-- Diego -->
-  <div class="team-card">
-    <div class="team-card__image">
-      <img
-        src="https://github.com/SirCloudzUTEC.png"
-        alt="Diego Fabricio Godoy Torres"
-        class="team-card__photo"
-      />
-    </div>
-    <div class="team-card__content">
-      <h3 class="team-card__name">Diego Fabricio Godoy Torres</h3>
-      <p class="team-card__role">Homelabbing</p>
-      <div class="team-card__social">
-        <a href="https://github.com/SirCloudzUTEC" class="team-card__social-link team-card__social-link--github">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/diego-godoy-torres/" class="team-card__social-link team-card__social-link--linkedin">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://github.com/pedrosolis-design.png"
+                    alt="Pedro Nicolas Solis Cordova"
+                    class="team-card__photo"
+                  />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Pedro Nicolas Solis Cordova</h3>
+                  <p class="team-card__role">FL Studio</p>
+                  <div class="team-card__social">
+                    <a href="https://github.com/pedrosolis-design" class="team-card__social-link team-card__social-link--github">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-nicol%C3%A1s-sol%C3%ADs-c%C3%B3rdova-2252a12a7/" class="team-card__social-link team-card__social-link--linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-  <!-- Pedro -->
-  <div class="team-card">
-    <div class="team-card__image">
-      <img
-        src="https://github.com/pedrosolis-design.png"
-        alt="Pedro Nicolas Solis Cordova"
-        class="team-card__photo"
-      />
-    </div>
-    <div class="team-card__content">
-      <h3 class="team-card__name">Pedro Nicolas Solis Cordova</h3>
-      <p class="team-card__role">FL Studio</p>
-      <div class="team-card__social">
-        <a href="https://github.com/pedrosolis-design" class="team-card__social-link team-card__social-link--github">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/pedro-nicol%C3%A1s-sol%C3%ADs-c%C3%B3rdova-2252a12a7/" class="team-card__social-link team-card__social-link--linkedin">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://github.com/GG-369.png"
+                    alt="Guillermo Valentino Ceceu Gamboa Sánchez"
+                    class="team-card__photo"
+                  />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Guillermo Valentino Ceceu Gamboa Sánchez</h3>
+                  <p class="team-card__role">Gaming</p>
+                  <div class="team-card__social">
+                    <a href="https://github.com/GG-369" class="team-card__social-link team-card__social-link--github">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/guillermo-valentino-ceceu-gamboa-sanchez/" class="team-card__social-link team-card__social-link--linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-  <!-- Guillermo -->
-  <div class="team-card">
-    <div class="team-card__image">
-      <img
-        src="https://github.com/GG-369.png"
-        alt="Guillermo Valentino Ceceu Gamboa Sánchez"
-        class="team-card__photo"
-      />
-    </div>
-    <div class="team-card__content">
-      <h3 class="team-card__name">Guillermo Valentino Ceceu Gamboa Sánchez</h3>
-      <p class="team-card__role">Gaming</p>
-      <div class="team-card__social">
-        <a href="https://github.com/GG-369" class="team-card__social-link team-card__social-link--github">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/guillermo-valentino-ceceu-gamboa-sanchez/" class="team-card__social-link team-card__social-link--linkedin">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-</div></div>
+            </div>
           </div>
         </section>
       </main>
